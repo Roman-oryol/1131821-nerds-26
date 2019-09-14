@@ -28,7 +28,51 @@
         <h2>Список шаблонов</h2>
         <div>
           <h3>Фильтр шаблонов</h3>
-          <!-- Здесь будет форма -->
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" id="filter-adaptive" name="product-grid" value="adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" id="filter-fixed" name="product-grid" value="fixed">
+                  <label for="filter-fixed">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" id="filter-rubber" name="product-grid" value="rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="filter-slider" name="slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-benefits" name="benefits-block">
+                  <label for="filter-benefits">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-news" name="news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-gallery" name="gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-basket" name="basket">
+                  <label for="filter-basket">Блок преимуществ</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </div>
         <ul>
           <li>
@@ -90,15 +134,29 @@
         </div>
         <div>
           <h3>Напишите нам</h3>
-          <!-- Здесь будет форма -->
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="name-field">Ваше имя:</label>
+              <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email-field">Ваш e-mail:</label>
+              <input type="email" id="email-field" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="message-field">Текст письма:</label>
+              <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
           <button type="button">Закрыть</button>
         </div>
       </section>
 
       <ul>
-        <li><a href="#nowhere">Вконтакте</a></li>
-        <li><a href="#nowhere">Фейсбук</a></li>
-        <li><a href="#nowhere">Инстаграм</a></li>
+        <li><a class="visually-hidden" href="#nowhere">Вконтакте</a></li>
+        <li><a class="visually-hidden" href="#nowhere">Фейсбук</a></li>
+        <li><a class="visually-hidden" href="#nowhere">Инстаграм</a></li>
       </ul>
 
       <div>

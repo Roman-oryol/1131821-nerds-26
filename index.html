@@ -59,15 +59,29 @@
         </div>
         <div>
           <h3>Напишите нам</h3>
-          <!-- Здесь будет форма -->
-          <button type="button">Закрыть</button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="name-field">Ваше имя:</label>
+              <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email-field">Ваш e-mail:</label>
+              <input type="email" id="email-field" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="message-field">Текст письма:</label>
+              <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+          <button class="visually-hidden" type="button">Закрыть</button>
         </div>
       </section>
 
       <ul>
-        <li><a href="#nowhere">Вконтакте</a></li>
-        <li><a href="#nowhere">Фейсбук</a></li>
-        <li><a href="#nowhere">Инстаграм</a></li>
+        <li><a class="visually-hidden" href="#nowhere">Вконтакте</a></li>
+        <li><a class="visually-hidden" href="#nowhere">Фейсбук</a></li>
+        <li><a class="visually-hidden" href="#nowhere">Инстаграм</a></li>
       </ul>
 
       <div>
