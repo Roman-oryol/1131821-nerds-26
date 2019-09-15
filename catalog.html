@@ -25,9 +25,8 @@
       <h1>Магазин готовых шаблонов</h1>
 
       <section>
-        <h2>Список шаблонов</h2>
+        <h2 class="visually-hidden">Список шаблонов</h2>
         <div>
-          <h3>Фильтр шаблонов</h3>
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Сетка:</legend>
@@ -38,7 +37,7 @@
                 </li>
                 <li>
                   <input type="radio" id="filter-fixed" name="product-grid" value="fixed">
-                  <label for="filter-fixed">Адаптивная</label>
+                  <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li>
                   <input type="radio" id="filter-rubber" name="product-grid" value="rubber">
@@ -50,24 +49,24 @@
               <legend>Особенности:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" id="filter-slider" name="slider" checked>
+                  <input type="checkbox" id="filter-slider" name="features" value="slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="filter-benefits" name="benefits-block">
+                  <input type="checkbox" id="filter-benefits" name="features" value="benefits">
                   <label for="filter-benefits">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="filter-news" name="news" checked>
+                  <input type="checkbox" id="filter-news" name="features" value="news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="filter-gallery" name="gallery">
+                  <input type="checkbox" id="filter-gallery" name="features" value="gallery">
                   <label for="filter-gallery">Галерея</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="filter-basket" name="basket">
-                  <label for="filter-basket">Блок преимуществ</label>
+                  <input type="checkbox" id="filter-basket" name="features" value="basket">
+                  <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -124,7 +123,7 @@
     <footer>
 
       <section>
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <img src="img/map.jpg" width="1440" height="416" alt="Карта офиса по адресу улица Б.Конюшенная, д. 19/8">
         <div>
           <h3>NЁRDS DESIGN STUDIO</h3>
@@ -137,11 +136,11 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label for="name-field">Ваше имя:</label>
-              <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
+              <input type="text" id="name-field" name="name" placeholder="Имя Фамилия">
             </p>
             <p>
               <label for="email-field">Ваш e-mail:</label>
-              <input type="email" id="email-field" name="email" value="" placeholder="email@example.com">
+              <input type="email" id="email-field" name="email" placeholder="email@example.com">
             </p>
             <p>
               <label for="message-field">Текст письма:</label>
@@ -149,14 +148,26 @@
             </p>
             <button type="submit">Отправить</button>
           </form>
-          <button type="button">Закрыть</button>
+          <button type="button"><span class="visually-hidden">Закрыть</span></button>
         </div>
       </section>
 
       <ul>
-        <li><a class="visually-hidden" href="#nowhere">Вконтакте</a></li>
-        <li><a class="visually-hidden" href="#nowhere">Фейсбук</a></li>
-        <li><a class="visually-hidden" href="#nowhere">Инстаграм</a></li>
+        <li>
+          <a href="#nowhere">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li>
+          <a href="#nowhere">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li>
+          <a href="#nowhere">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
       </ul>
 
       <div>
