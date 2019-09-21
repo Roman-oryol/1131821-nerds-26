@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-    <header>
-      <nav>
-        <a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-logo">
           <img src="img/logo.svg" width="160" height="65" alt="Логотип сайта «Nerds»">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#nowhere">Студия</a></li>
           <li><a href="#nowhere">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
@@ -21,45 +23,45 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
 
-      <section>
+      <section class="advantages">
         <h2 class="visually-hidden">Предлагаемые услуги</h2>
-        <ul>
-          <li>
+        <ul class="advantages-list">
+          <li class="advantage-item">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#nowhere">Заказать</a>
+            <a class="button advantages-button" href="#nowhere">Заказать</a>
           </li>
-          <li>
+          <li class="advantage-item">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#nowhere">Заказать</a>
+            <a class="button advantages-button advantages-button-secondary" href="#nowhere">Заказать</a>
           </li>
-          <li>
+          <li class="advantage-item">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#nowhere">Заказать</a>
+            <a class="button advantages-button advantages-button-tertiary" href="#nowhere">Заказать</a>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
 
-      <section>
+      <section class="contacts-section">
         <h2 class="visually-hidden">Контактная информация</h2>
         <img src="img/map.jpg" width="1440" height="416" alt="Карта офиса по адресу улица Б.Конюшенная, д. 19/8">
-        <div>
+        <div class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a href="#nowhere">Напишите нам</a>
+          <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="button contacts-button" href="#nowhere">Напишите нам</a>
         </div>
-        <div>
+        <div class="modal">
           <h3>Напишите нам</h3>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label for="name-field">Ваше имя:</label>
               <input type="text" id="name-field" name="name" placeholder="Имя Фамилия">
@@ -72,35 +74,35 @@
               <label for="message-field">Текст письма:</label>
               <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
             </p>
-            <button type="submit">Отправить</button>
+            <button class="button letter-form-button" type="submit">Отправить</button>
           </form>
-          <button type="button">
+          <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </div>
       </section>
 
-      <ul>
+      <ul class="footer-social">
         <li>
-          <a href="#nowhere">
+          <a class="button social-button" href="#nowhere">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li>
-          <a href="#nowhere">
+          <a class="button social-button" href="#nowhere">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li>
-          <a href="#nowhere">
+          <a class="button social-button" href="#nowhere">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
       </ul>
 
-      <div>
-        <p>Давайт дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальный сетей.</p>
+      <div class="footer-slogan">
+        <p class="footer-slogan-title">Давайтe дружить, это выгодно!</p>
+        <p class="footer-slogan-discount">Скидка 10% для друзей из социальный сетей.</p>
       </div>
     </footer>
 
