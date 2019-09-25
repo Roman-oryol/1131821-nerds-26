@@ -32,25 +32,20 @@
 }
 
 html {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-
-  background-color: #ffffff;
-}
-
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .button {
   font-weight: 500;
+  font-size: 16px;
   line-height: 18px;
   text-align: center;
   color: #ffffff;
@@ -112,40 +107,36 @@ a {
   list-style: none;
 }
 
-.advantage-item h3{
+.advantage-item h3 {
   font-weight: inherit;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
 }
 
-.advantage-item p {
-  color: #283136;
-}
-
-.advantages-button-secondary {
+.button-secondary {
   background-color: #00ca74;
 }
 
-.advantages-button-secondary:hover,
-.advantages-button-secondary:focus {
+.button-secondary:hover,
+.button-secondary:focus {
   background-color: #00bc6c;
 }
 
-.advantages-button-secondary:active {
+.button-secondary:active {
   background-color: #00aa62;
 }
 
-.advantages-button-tertiary {
+.button-tertiary {
   background-color: #efc84a;
 }
 
-.advantages-button-tertiary:hover,
-.advantages-button-tertiary:focus {
+.button-tertiary:hover,
+.button-tertiary:focus {
   background-color: #eab534;
 }
 
-.advantages-button-tertiary:active {
+.button-tertiary:active {
   background-color: #e5a722;
 }
 
@@ -191,18 +182,25 @@ a {
   opacity: 0.3;
 }
 
-.filter-button {
+.catalog-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
   color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
 
   background-color: #eeeeee;
+  border: none;
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.catalog-button:hover,
+.catalog-button:focus {
   background-color: #dfdfdf;
 }
 
-.filter-button:active {
+.catalog-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }
@@ -252,36 +250,16 @@ a {
   list-style: none;
 }
 
-.pagination-list a {
-  font-weight: 500;
-  line-height: 18px;
-  color: #000000;
-
-  background-color: #eeeeee;
-}
-
-.pagination-list a:hover,
-.pagination-list a:focus {
-  background-color: #dfdfdf;
-}
-
-.pagination-list a:active {
-  color: rgba(0, 0, 0, 0.3);
-
-  background-color: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-}
-
-.pagination-item-current a {
+.pagination-button-current {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination-button-current:hover,
+.pagination-button-current:focus,
+.pagination-button-current:active {
   color: #000000;
-
+  box-shadow: none;
   background-color: #ffffff;
 }
 
