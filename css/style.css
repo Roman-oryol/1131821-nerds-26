@@ -216,7 +216,6 @@ img {
   height: 2px;
 
   background-color: #fb565a;
-
 }
 
 .user-navigation .cart-link {
@@ -329,7 +328,6 @@ img {
   font-size: 55px;
   line-height: 55px;
   color: #000000;
-
 }
 
 .catalog {
@@ -386,8 +384,7 @@ img {
   user-select: none;
 }
 
-.filter-input + label::before,
-.filter-input + label::after {
+.filter-input + label::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -400,9 +397,7 @@ img {
 }
 
 .filter-option:hover label::before,
-.filter-option:hover label::after,
-.filter-option input:focus + label::before,
-.filter-option input:focus + label::after {
+.filter-option input:focus + label::before {
   opacity: 1;
 }
 
@@ -411,10 +406,6 @@ img {
 }
 
 .filter-input-radio:checked + label::before {
-  display: none;
-}
-
-.filter-input-radio:checked + label::after {
   background: url("../img/radio-on.svg") no-repeat 0 0;
 }
 
@@ -422,20 +413,14 @@ img {
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
-.filter-input-checkbox:checked + label::before {
-  display: none;
-}
-
-.filter-input:disabled + label::before,
-.filter-input:disabled + label::after {
+.filter-input:disabled + label::before {
   opacity: 0.1;
 }
 
-.filter-input:disabled + label,
 .filter-input:disabled + label {
   opacity: 0.3;
 }
@@ -557,7 +542,6 @@ img {
 }
 
 .catalog-item-title {
-  display: block;
   margin: 0;
   margin-bottom: 13px;
 
@@ -567,12 +551,11 @@ img {
   text-transform: uppercase;
 }
 
-.catalog-item-title:hover,
-.catalog-item-title:active {
+.catalog-item-title a:hover {
   color: #fb565a;
 }
 
-.catalog-item-title:active {
+.catalog-item-title a:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -841,9 +824,7 @@ img {
 }
 
 .social-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 
   width: 80px;
   height: 80px;
@@ -852,8 +833,33 @@ img {
   background-color: #e1e1e1;
 }
 
-.social-button:active path{
-  fill: rgba(255, 255, 255, 0.3);
+.social-button::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-vk::before {
+  background-image: url("../img/vk-icon.svg");
+}
+
+.social-fb::before {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.social-insta::before {
+  background-image: url("../img/insta-icon.svg");
+}
+
+.social-button:active::before {
+  opacity: 0.3;
 }
 
 .footer-slogan {
