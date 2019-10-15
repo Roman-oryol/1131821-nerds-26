@@ -244,8 +244,6 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0;
-  padding: 0;
   padding-bottom: 80px;
 
   list-style: none;
