@@ -312,10 +312,6 @@ img {
   padding: 76px 0 80px;
 }
 
-.slider-show {
-  display: block;
-}
-
 .slider-item:nth-child(1) {
   display: block;
 }
