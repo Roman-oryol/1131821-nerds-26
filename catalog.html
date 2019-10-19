@@ -33,15 +33,15 @@
       <section class="catalog container">
         <h2 class="visually-hidden">Список шаблонов</h2>
         <form class="filters" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="price">
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <button class="toggle toggle-min" type="button"></button>
-                <button class="toggle toggle-max" type="button"></button>
+                <button class="toggle toggle-min" type="button"><span class="visually-hidden">Указатель минимальной цены</span></button>
+                <button class="toggle toggle-max" type="button"><span class="visually-hidden">Указатель максимальной цены</span></button>
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -49,7 +49,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="grid">
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
@@ -102,8 +102,8 @@
               <li><a href="#nowhere">по названию</a></li>
             </ul>
             <ul class="sort-list">
-              <li><a class="arrow arrow-down" href="#nowhere">по убыванию</a></li>
-              <li><a class="arrow arrow-up" href="#nowhere">по возрастанию</a></li>
+              <li><a class="arrow arrow-down" href="#nowhere"><span class="visually-hidden">по убыванию</span></a></li>
+              <li><a class="arrow arrow-up" href="#nowhere"><span class="visually-hidden">по возрастанию</span></a></li>
             </ul>
           </div>
           <ul class="catalog-list">
@@ -184,6 +184,7 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="Карта офиса по адресу улица Б.Конюшенная, д. 19/8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123647!2d30.32089461561842!3d59.938796869048474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1571040332590!5m2!1sru!2sua" width="1440" height="416" style="border:0;" allowfullscreen=""></iframe>
           <div class="container">
             <div class="contacts">
               <h3>NЁRDS DESIGN STUDIO</h3>
@@ -234,11 +235,13 @@
         </ul>
 
         <div class="footer-slogan">
-          <p class="footer-slogan-title">Давайт дружить, это выгодно!</p>
+          <p class="footer-slogan-title">Давайте дружить, это выгодно!</p>
           <p class="footer-slogan-discount">Скидка 10% для друзей из социальный сетей.</p>
         </div>
       </div>
     </footer>
+
+    <script src="js/popup.js"></script>
 
   </body>
 </html>
