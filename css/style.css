@@ -724,16 +724,14 @@ img {
 }
 
 .price-controls {
-  font-size: 0;
+  display: flex;
 }
 
 .price-controls label {
-  display: inline-block;
   width: 50%;
 
   font-size: 16px;
   line-height: 22px;
-  vertical-align: middle;
   text-transform: uppercase;
 }
 
