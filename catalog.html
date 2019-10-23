@@ -37,11 +37,11 @@
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+                <div class="range-scale">
+                  <div class="range-bar"></div>
                 </div>
-                <button class="toggle toggle-min" type="button"><span class="visually-hidden">Указатель минимальной цены</span></button>
-                <button class="toggle toggle-max" type="button"><span class="visually-hidden">Указатель максимальной цены</span></button>
+                <button class="range-toggle range-toggle-min" type="button"><span class="visually-hidden">Указатель минимальной цены</span></button>
+                <button class="range-toggle range-toggle-max" type="button"><span class="visually-hidden">Указатель максимальной цены</span></button>
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -49,7 +49,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="grid">
+          <fieldset class="radio-group">
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option">
@@ -66,7 +66,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="checkbox-group">
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-option">
@@ -102,8 +102,8 @@
               <li><a href="#nowhere">по названию</a></li>
             </ul>
             <ul class="sort-list">
-              <li><a class="arrow arrow-down" href="#nowhere"><span class="visually-hidden">по убыванию</span></a></li>
-              <li><a class="arrow arrow-up" href="#nowhere"><span class="visually-hidden">по возрастанию</span></a></li>
+              <li><a class="sort-arrow sort-arrow-down" href="#nowhere"><span class="visually-hidden">по убыванию</span></a></li>
+              <li><a class="sort-arrow sort-arrow-up" href="#nowhere"><span class="visually-hidden">по возрастанию</span></a></li>
             </ul>
           </div>
           <ul class="catalog-list">
@@ -241,7 +241,7 @@
       </div>
     </footer>
 
-    <script src="js/popup.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
