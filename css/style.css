@@ -1220,7 +1220,6 @@ img {
   bottom: 180px;
   left: 50%;
 
-  display: none;
   width: 760px;
   padding: 65px 100px 84px;
 
@@ -1228,10 +1227,6 @@ img {
 
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
   background-color: #ffffff;
-}
-
-.modal-show {
-  display: block;
 
   animation: bounce 0.6s;
 }
