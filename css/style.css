@@ -641,6 +641,8 @@ img {
 
 .partner-item img {
   display: block;
+
+  pointer-events: none;
 }
 
 .page-title-wrapper {
