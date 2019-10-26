@@ -7,7 +7,7 @@ var email = form.querySelector("[name=email]");
 var message = form.querySelector("[name=message]");
 var isStorageSupport = true;
 var storage_name = "";
-var storage_email ="";
+var storage_email = "";
 
 var slider = document.querySelector(".slider");
 
