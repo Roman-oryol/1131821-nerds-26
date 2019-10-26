@@ -980,6 +980,8 @@ img {
   display: inline-block;
   width: 1px;
 
+  vertical-align: middle;
+
   border-width: 10px 5px;
   border-style: solid;
   border-right-color: transparent;
