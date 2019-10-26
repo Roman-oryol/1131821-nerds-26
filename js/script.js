@@ -9,6 +9,8 @@ var isStorageSupport = true;
 var storage_name = "";
 var storage_email ="";
 
+var slider = document.querySelector(".slider");
+
 try {
   storage_name = localStorage.getItem("user_name");
   storage_email = localStorage.getItem("email");
@@ -56,3 +58,30 @@ window.addEventListener("keydown", function (evt) {
     popup.classList.remove("modal-error");
   }
 });
+
+if (slider) {
+  var slides = slider.querySelectorAll(".slider-item");
+  var switch_list = slider.querySelector(".slider-controls");
+  var switches = switch_list.querySelectorAll(".slide-switch");
+
+  switch_list.classList.remove("hidden");
+
+  var toggle_handler = function (i) {
+    switches[i].addEventListener("click", function(evt) {
+      for (var j = 0; j < switches.length; j++) {
+        if (switches[j] === evt.currentTarget) {
+          console.log(j, i);
+          switches[j].classList.add("slide-switch-active");
+          slides[j].classList.remove("hidden");
+        } else {
+          switches[j].classList.remove("slide-switch-active");
+          slides[j].classList.add("hidden");
+        }
+      }
+    });
+  };
+
+  for (var i = 0; i < switches.length; i++) {
+    toggle_handler(i);
+  }
+};
